@@ -4,7 +4,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 2px;
+    padding: 4px;
 }
 nav>a>div{
     background-color: rgb(255, 0, 0);
@@ -12,6 +12,7 @@ nav>a>div{
     color: white;
     font-size: 24px;
     border: 1px rgb(255, 165, 0) solid;
+    border-radius: 15px;
     vertical-align: middle;
     padding: 40px;
 }
