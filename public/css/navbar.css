@@ -1,16 +1,17 @@
 nav{
     max-height: fit-content;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 2px;
 }
-nav>div{
+nav>a>div{
+    background-color: rgb(255, 0, 0);
     text-align: center;
     color: white;
     font-size: 24px;
-    border: 1px orange solid;
+    border: 1px rgb(255, 165, 0) solid;
     vertical-align: middle;
     padding: 40px;
 }
@@ -19,6 +20,6 @@ a{
     color: white;
     margin: 0 10px;
 }
-div:hover{
-    background-color: blue;
+a:hover>div{
+    background-color: rgb(240, 10, 10);
 }

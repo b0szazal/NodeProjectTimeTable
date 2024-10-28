@@ -1,10 +1,21 @@
 <%- include('includes/start')%>
+<link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
 
     <%- include('includes/navbar') %>
     <main>
-        <h1>NYI</h1>
+        <form action="soontm" method="post">
+            <label for="subject">Tárgy neve:</label>
+            <input type="text" id="subject" name="subject"><br>
+            <label for="shortVer">Rövidítés:</label>
+            <input type="text" id="shortVer" name="shortVer" placeholder="nem szükséges"><br>
+            <label for="fromTime">Mettől:</label>
+            <input id="fromTime" name="fromTime" type="number" placeholder="órában"></input><br>
+            <label for="toTime">Meddig:</label>
+            <input id="toTime" name="toTime" type="number" placeholder="órában"></input><br>
+            <input type="submit" value="Küldés">
+        </form>
     </main>
 </body>
 </html>
