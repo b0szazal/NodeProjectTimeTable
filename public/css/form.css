@@ -1,4 +1,5 @@
-input{
+input, select, label{
+    font-size: large;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
