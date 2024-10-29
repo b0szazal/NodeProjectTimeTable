@@ -6,24 +6,56 @@
     <%- include('includes/navbar') %>
     <main>
         <form action="soontm" method="post" class="container">
-            <label for="subject">Tárgy neve:</label>
-            <input type="text" id="subject" name="subject"><br>
-            <label for="shortVer">Rövidítés:</label>
-            <input type="text" id="shortVer" name="shortVer" placeholder="nem szükséges"><br>
-            <label for="day">Nap</label>
-            <select id="day">
-                <option value="monday">Hétfő</option>
-                <option value="tuesday">Kedd</option>
-                <option value="wednesday">Szerda</option>
-                <option value="thursday">Csütörtök</option>
-                <option value="friday">Péntek</option>
-                <option value="saturday">Szombat</option>
-                <option value="sunday">Vasárnap</option>
-            </select><br>
-            <label for="fromTime">Mettől:</label>
-            <input id="fromTime" name="fromTime" type="number" placeholder="órában"></input><br>
-            <label for="toTime">Meddig:</label>
-            <input id="toTime" name="toTime" type="number" placeholder="órában"></input><br>
+            <table>
+                <tr>
+                    <td>
+                        <label for="subject">Tárgy neve:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="subject" name="subject">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="shortVer">Rövidítés:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="shortVer" name="shortVer" placeholder="nem szükséges">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="day">Nap:</label>
+                    </td>
+                    <td>
+                        <select id="day">
+                            <option value="monday">Hétfő</option>
+                            <option value="tuesday">Kedd</option>
+                            <option value="wednesday">Szerda</option>
+                            <option value="thursday">Csütörtök</option>
+                            <option value="friday">Péntek</option>
+                            <option value="saturday">Szombat</option>
+                            <option value="sunday">Vasárnap</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fromTime">Mettől:</label>
+                    </td>
+                    <td>
+                        <input id="fromTime" name="fromTime" type="number" placeholder="órában"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="toTime">Meddig:</label>
+                    </td>
+                    <td>
+                        <input id="toTime" name="toTime" type="number" placeholder="órában"></input>
+                    </td>
+                </tr>
+            </table>
             <input type="submit" value="Mentés">
         </form>
     </main>
