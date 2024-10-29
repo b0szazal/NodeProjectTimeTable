@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import path from 'path';  
 
-import {rootRouter} from './routes/root.js';
+import {homeRouter} from './routes/home.js';
 import {addToTimeTableRouter} from './routes/addToTimeTable.js';
 import __dirname from './util/rootpath.js';
 
@@ -14,7 +14,7 @@ app.set('views', 'views');
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use("/",rootRouter);
+app.use("/",homeRouter);
 app.use("/addToTimeTable", addToTimeTableRouter);
 
 
