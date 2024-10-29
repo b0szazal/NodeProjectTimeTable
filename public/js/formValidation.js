@@ -22,7 +22,7 @@ $(()=>{
         else{
             dayGood=true;
         }
-        EnableSubmit();
+        TryEnableSubmit();
     })
     $("#fromTime").on("input", function(){
         try{
