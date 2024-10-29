@@ -42,7 +42,7 @@ body{
 
 .container::after, .container::before{
     content: '';
-    background-image: conic-gradient(from var(--angle), transparent,  red, green, blue, red);
+    background-image: conic-gradient(from var(--angle), red, green, blue, red);
     position: absolute;
     width: 100%;
     height: 100%;

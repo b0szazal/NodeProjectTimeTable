@@ -1,11 +1,12 @@
 <%- include('includes/start')%>
 <link rel="stylesheet" href="/css/form.css">
+<script src="/js/formValidation.js"></script>
 </head>
 <body>
 
     <%- include('includes/navbar') %>
     <main>
-        <form action="soontm" method="post" class="container">
+        <form action="/addToTimeTable" method="post" class="container">
             <table>
                 <tr>
                     <td>
@@ -29,6 +30,7 @@
                     </td>
                     <td>
                         <select id="day">
+                            <option value="-">Kérem válasszon</option>
                             <option value="monday">Hétfő</option>
                             <option value="tuesday">Kedd</option>
                             <option value="wednesday">Szerda</option>
@@ -41,22 +43,22 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="fromTime">Mettől:</label>
+                        <label for="fromTime">Hány órától:</label>
                     </td>
                     <td>
-                        <input id="fromTime" name="fromTime" type="number" placeholder="órában"></input>
+                        <input id="fromTime" name="fromTime" type="number" placeholder="órában" min="0" max="23"></input>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="toTime">Meddig:</label>
+                        <label for="lengthTime">Hossz:</label>
                     </td>
                     <td>
-                        <input id="toTime" name="toTime" type="number" placeholder="órában"></input>
+                        <input id="lengthTime" name="lengthTime" type="number" placeholder="órában" max="168" min="0"></input>
                     </td>
                 </tr>
             </table>
-            <input type="submit" value="Mentés">
+            <button type="submit" disabled>Mentés</button>
         </form>
     </main>
 </body>
