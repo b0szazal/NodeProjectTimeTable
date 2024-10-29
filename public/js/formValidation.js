@@ -42,7 +42,7 @@ $(()=>{
     $("#lengthTime").on("input", function(){
         try{
             let lengthTime = Number($(this).val());
-            if(fromTime>=0 && fromTime<169){
+            if(lengthTime>=0 && lengthTime<169){
                 lengthTimeGood=true;
             }
             else{
@@ -56,10 +56,10 @@ $(()=>{
     })
     function TryEnableSubmit(){
         if(subjectGood && dayGood && lengthTimeGood && fromTimeGood){
-            $("#submitBtn").prop("disabled", false);
+            $("button").prop("disabled", false);
         }
         else{
-            $("#submitBtn").prop("disabled", true);
+            $("button").prop("disabled", true);
         }
     }
 })
