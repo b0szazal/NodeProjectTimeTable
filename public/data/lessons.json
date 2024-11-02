@@ -1,0 +1,14 @@
+[
+    {
+        "subject": "Matematika",
+        "shortVer": "mat",
+        "fromTime": "2",
+        "lengthTime": "6"
+    },
+    {
+        "subject": "angol",
+        "shortVer": "ang",
+        "fromTime": "5",
+        "lengthTime": "12"
+    }
+]
