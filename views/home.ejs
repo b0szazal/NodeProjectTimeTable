@@ -22,7 +22,7 @@
                         <td><%= hour %>:00</td>
                         <% ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"].forEach(day => { %>
                             <td>
-                                <% const lesson = lessons.find(l => l.day === day && parseInt(l.fromTime) === hour); %>
+                                <%= let lesson = lessons.find(l => l.day === day && parseInt(l.fromTime) === hour); %>
                                 <% if (lesson) { %>
                                     <%= lesson.subject %> (<%= lesson.shortVer %>)
                                 <% } %>
