@@ -1,14 +1,6 @@
 [
-    {
-        "subject": "Matematika",
-        "shortVer": "mat",
-        "fromTime": "2",
-        "lengthTime": "6"
-    },
-    {
-        "subject": "angol",
-        "shortVer": "ang",
-        "fromTime": "5",
-        "lengthTime": "12"
-    }
+    {"subject":"Matek","shortVer":"Mat","day":"monday","fromTime":"9","lengthTime":"1"},
+  {"subject":"Ang","shortVer":"Ang","day":"monday","fromTime":"8","lengthTime":"1"},
+  {"subject":"Ang","shortVer":"Ang","day":"monday","fromTime":"10","lengthTime":"1"},
+  {"subject":"Desktop","shortVer":"Ds","day":"tuesday","fromTime":"1","lengthTime":"3"}
 ]
