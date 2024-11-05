@@ -26,7 +26,7 @@ const setFileContent = (content) =>{
 export class TimeTable{
     constructor(subject, shortVer, day, fromTime, lengthTime){
         this.subject= subject,
-        this.shortVer= shortVer,
+        this.shortVer= shortVer==null ? "" : shortVer,
         this.day= day,
         this.fromTime= fromTime,
         this.lengthTime= lengthTime

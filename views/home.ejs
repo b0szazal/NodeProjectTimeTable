@@ -17,17 +17,31 @@
                 <th id="sunday">Vasárnap</th>
             </tr>
             <tbody>
+                <% const tdsPerRows=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; %>
                 <% for (let hour = 0; hour <= 23; hour++) { %>
                     <tr>
                         <td><%= hour %>:00</td>
                         <% ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"].forEach(day => { %>
-                            <% const lesson = lessons.find(l => l.day === day && parseInt(l.fromTime) === hour); %>
-                            <td rowspan="<%= (lesson) ? lesson.lengthTime : '1' %>">
-                            
-                                <% if (lesson) { %>
-                                    <%= lesson.subject %> (<%= lesson.shortVer %>)
-                                <% } %>
-                            </td>
+                            <% if (tdsPerRows[hour] < 7 ) { %>
+                                <% const lesson = lessons.find(l => l.day === day && parseInt(l.fromTime) === hour); %>
+                                <td rowspan="<%= (lesson) ? lesson.lengthTime : '1' %>">
+                                
+                                    <% if (lesson) { %>
+                                        <!-- shortver or subject only
+                                        <% if(lesson.shortVer === "") { %>
+                                            <%= lesson.subject %>
+                                        <% } %> -->
+                                        <%= lesson.subject %> 
+                                        <% if(lesson.shortVer != ""){ %>
+                                            (<%= lesson.shortVer %>)
+                                        <% } %>
+                                        <% for(let i=1; i<=lesson.lengthTime-1; i++) { %>
+                                            <% tdsPerRows[i+hour]++ %>
+                                        <% } %>
+                                    <% } %>
+                                    <% tdsPerRows[hour]++%>
+                                </td>
+                            <% } %>
                         <% }) %>
                     </tr>
                 <% } %>
