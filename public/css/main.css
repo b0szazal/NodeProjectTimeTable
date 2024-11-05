@@ -67,4 +67,5 @@ td, th{
     min-height: fit-content;
     border: solid 3px black;
     border-collapse: collapse;
+    padding: 5px;
 }
