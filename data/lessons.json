@@ -1,6 +1,1 @@
-[
-    {"subject":"Matek","shortVer":"Mat","day":"monday","fromTime":"9","lengthTime":"1"},
-  {"subject":"Ang","shortVer":"Ang","day":"monday","fromTime":"8","lengthTime":"1"},
-  {"subject":"Ang","shortVer":"Ang","day":"monday","fromTime":"10","lengthTime":"1"},
-  {"subject":"Desktop","shortVer":"Ds","day":"tuesday","fromTime":"1","lengthTime":"3"}
-]
+[{"subject":"Matek","shortVer":"Mat","day":"monday","fromTime":"9","lengthTime":"1"},{"subject":"Ang","shortVer":"Ang","day":"monday","fromTime":"8","lengthTime":"1"},{"subject":"Ang","shortVer":"Ang","day":"monday","fromTime":"10","lengthTime":"1"},{"subject":"Desktop","shortVer":"Ds","day":"tuesday","fromTime":"1","lengthTime":"3"},{"subject":"123","shortVer":"1","day":"monday","fromTime":"4","lengthTime":"6"},{"subject":"1231","shortVer":"12","day":"monday","fromTime":"14","lengthTime":"2"},{"subject":"KeddTest","shortVer":"KT","day":"tuesday","fromTime":"14","lengthTime":"2"},{"subject":"SzerdaTest","shortVer":"SzT","day":"wednesday","fromTime":"10","lengthTime":"2"}]

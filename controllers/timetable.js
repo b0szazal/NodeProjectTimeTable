@@ -8,7 +8,7 @@ export const getAddTimeTable=(req, res) => {
 };
 
 export const postSaveTimeTable=(req, res) => {
-    const timetable=new TimeTable(req.body.title, req.body.shortVer, req.body.day, req.body.fromTime, req.body.lengthTime)
+    const timetable=new TimeTable(req.body.subject, req.body.shortVer, req.body.day, req.body.fromTime, req.body.lengthTime)
     timetable.save()
     res.redirect('/');
 };
